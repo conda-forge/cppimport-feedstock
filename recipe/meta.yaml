@@ -1,13 +1,13 @@
 {% set name = "cppimport" %}
-{% set version = "22.8.2" %}
+{% set version = "26.4.17" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bbb4957102db41bc99ad72c233bce92f9d1fd91be352fc07878c4361033a401f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 1fd9c1f16b2cf346507ef81b17f9b4947ddf0d5818b26f6c03078e8e7b366444
 
 build:
   noarch: python
