@@ -20,6 +20,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
+    - setuptools
     - setuptools_scm
   run:
     - filelock
@@ -33,6 +34,8 @@ tests:
       imports:
         - cppimport
       pip_check: true
+      python_version:
+        - ${{ python_min }}.*
   - files:
       source:
         - tests
